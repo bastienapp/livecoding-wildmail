@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WildMail</title>
+</head>
+<body>
+<p>Bonjour vous êtes sur Wild Mail !</p>
+<form th:action="@{/mail/list}" method="post">
+    <label>Votre adresse email :&nbsp;</label>
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>

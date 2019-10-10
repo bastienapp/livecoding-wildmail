@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Email List</title>
+</head>
+<body>
+<h3 th:text="|Votre email est ${email}|">Email value</h3>
+<ul>
+    <li th:each="mail : ${listemail}">
+        <span th:text="${mail.sender}">Expéditeur</span>
+        <span th:text="${mail.object}">Objet</span>
+    </li>
+</ul>
+</body>
+</html>
