@@ -4,13 +4,15 @@ import java.util.Date;
 
 public class Email {
 
+    private Long id;
     private String sender;
     private String receiver;
     private Date date;
     private String object;
     private String message;
 
-    public Email(String sender, String receiver, String object, String message) {
+    public Email(Long id, String sender, String receiver, String object, String message) {
+        this.id = id;
         this.sender = sender;
         this.receiver = receiver;
         this.date = new Date();
@@ -56,5 +58,13 @@ public class Email {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+</head>
+<body>
+<p th:text="|Destinataire: ${emailValues.receiver}|">Destinataire: $receiver</p>
+<p th:text="|Expéditeur: ${emailValues.sender}|">Expéditeur: $sender</p>
+<p th:text="|Objet: ${emailValues.object}|">Objet: $object</p>
+<p th:text="|Message: ${emailValues.message}|">Message: $message</p>
+</body>
+</html>

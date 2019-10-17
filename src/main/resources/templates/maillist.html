@@ -10,6 +10,7 @@
     <li th:each="mail : ${listemail}">
         <span th:text="${mail.sender}">Expéditeur</span>
         <span th:text="${mail.object}">Objet</span>
+        <a th:href="@{/mail(id=${mail.id})}">Open email informations</a>
     </li>
 </ul>
 </body>
